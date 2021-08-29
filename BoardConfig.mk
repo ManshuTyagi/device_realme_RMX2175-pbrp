@@ -141,5 +141,6 @@ TW_H_OFFSET := -115
 TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone3/temp
 
 # PBRP Build Flags
+PB_DISABLE_DEFAULT_DM_VERITY := true
 PB_TORCH_PATH := /proc/qcom_flash
 PB_TORCH_MAX_BRIGHTNESS := 1
