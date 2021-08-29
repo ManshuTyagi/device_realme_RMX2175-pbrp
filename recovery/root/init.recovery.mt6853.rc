@@ -97,6 +97,9 @@ on property:twrp.decrypt.done=true && property:twrp.all.users.decrypted=true
 
 on early-init
     setprop recovery.perf.mode 1
+    mount debugfs debugfs /sys/kernel/debug
+    chmod 0755 /sys/kernel/debug
+    chown system system /sys/kernel/debug
 
 on boot
     setprop recovery.perf.mode 0
