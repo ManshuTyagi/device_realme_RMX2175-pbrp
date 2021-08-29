@@ -33,5 +33,4 @@ preload_common		/common_preload		ext4
 /misc             emmc     /dev/block/platform/bootdevice/by-name/misc
 
 # USB OTG
-/external_sd      vfat     /dev/block/mmcblk0p1  /dev/block/mmcblk0            flags=display="external_sd";storage;wipeingui;removable;fsflags="utf8"
 /usb_otg         vfat    /dev/block/sdd1 /dev/block/sdd                            flags=display="USB-Storage";storage;wipeingui;removable;fsflags="utf8"
